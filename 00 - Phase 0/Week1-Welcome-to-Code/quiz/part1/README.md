@@ -28,9 +28,35 @@ yak Buka aja W3school dan kerjakan soal soal berikut
 // algoritma
 //isi algoritma mu disini (AWAS KALO GA DI ISI!!!!)
 
+/**
+ * algoritma program proxytia 
+ * 
+ * aplikasi ini membutuhkan 2 input yang akan diisi oleh user yaitu nama dan peran
+ * disini aplikasi nantinya akan memberikan pengkondisian dimana nama dan peran harus diisi
+ * jika salah satu diisi nanti akan diberikan peringatan bahwa nama atau peran wajib diisi
+ * 
+ * jika nama sudah diisi dan peran sama dengan 3 peran yang tersedia makan akan mengeluarkan output sesuai dengan yang diambil
+ * 
+ * dan jika nama tidak tersedia di peran maka akan mengembalikan output keanya kamu jadi bot aja ya
+ */
+
 
 let nama = "", peran = "";
 
+if(nama === "") {
+    console.log("nama harus diisi");
+} else if (peran === "") {
+    console.log("peran harus diisi");
+} else if (peran.toLowerCase() === "ksatria") {
+    console.log(`halo Ksatria ${nama} , kamu dapat menyerang dengan senjatamu!`)
+} else if (peran.toLowerCase() === "tabib") {
+    console.log(`halo Tabib ${nama} , kamu akan membantu temanmu yang terluka`);
+} else if (peran.toLowerCase() === "penyihir") {
+    console.log(`halo Penyihir ${nama} , ciptakan keajaiban yang membantu kemenanganmu!`);
+} else {
+    console.log(`Hey ${nama}, tapi kayaknya kamu jadi bot aja ya, peran ${peran} yang kamu pilih ga ada`)
+}
+ 
 //code disini gunakan console.log untuk outputnya
 
 ```
